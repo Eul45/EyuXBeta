@@ -167,8 +167,8 @@ EyuX is packed with features that create a truly interactive and intelligent cha
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/Eul45/EyuX.git
-cd EyuX
+git clone https://github.com/Eul45/EyuXBeta.git
+cd EyuXBeta
 ```
 
 ### 3. Install Dependencies
