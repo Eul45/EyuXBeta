@@ -120,9 +120,11 @@ EYUXBETA
 
 ---
 
-🖼️ Feature Overview
-🖥️ Desktop & Web Experience
+## 🖼️ Feature Overview
+
+### 🖥️ Desktop & Web Experience
 EyuX on the web utilizes the full screen real estate for a powerful dashboard experience.
+
 <table>
 <tr>
 <td width="50%" align="center">
@@ -191,8 +193,10 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 </td>
 </tr>
 </table>
-📱 Mobile & Interactive UI
+
+### 📱 Mobile app & Interactive UI
 Optimized for touch, haptics, and quick interactions on Android.
+
 <table>
 <tr>
 <td width="33%" align="center">
