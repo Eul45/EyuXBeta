@@ -35,7 +35,7 @@ EYUXBETA
 │   ├── api                       // For all external API call logic.
 │   │   ├── geminiService.ts
 │   │   └── tavilyService.ts
-│   ├── assets                    // Stays as is (fonts, images).
+│   |
 │   ├── components                // Reusable UI components.
 │   │   ├── animated              // Purely aesthetic animated components.
 │   │   │   ├── AnimatedBackground.tsx
@@ -103,6 +103,7 @@ EYUXBETA
 |   |   ├── webNotifications.ts   // Web-specific push notification handler
 |   |   ├──
 │   └── App.tsx                   // The main application component (formerly AppContent).
+├── assets                    // Stays as is (fonts, images).
 ├── package.json
 └── ... (other root config files)
 ```
