@@ -168,14 +168,14 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 </td>
 </tr>
 </table>
-☁️ Sync & Sharing
+🖼️ image & Sharing
 <table>
 <tr>
 <td width="50%" align="center">
 <strong>Conversation Sharing</strong>
 </td>
 <td width="50%" align="center">
-<strong>Google Drive Sync</strong>
+<strong>Image generation</strong>
 </td>
 </tr>
 <tr>
