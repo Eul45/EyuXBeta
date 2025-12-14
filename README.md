@@ -1,7 +1,8 @@
 # EyuX: The Supercharged AI Chat Experience
 
 <div align="center">
- <img src="https://raw.githubusercontent.com/Eul45/EyuX/main/assets/images/splash-icon (1).ico" alt="EyuX Logo" width="150"/>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/favicon2.png" alt="EyuX Logo" width="150"/>
+
 
   <br/><br/>
   <strong>A feature-rich, multi-personality AI chat and productivity app built with React Native & Expo.</strong>
@@ -12,6 +13,10 @@
 </div>
 
 ---
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/eyux.gif" alt="EyuX Web Demo" width="700" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);"/>
+</div>
+<br/>
 
 EyuX is more than just a chatbot. It's a versatile mobile companion designed to be your assistant, entertainer, and productivity partner. Powered by Google's Gemini models, it features dynamic AI personalities, live web search, AI image generation, interactive code execution, long-term memory, and extensive customization options, all wrapped in a sleek, animated, and user-friendly interface.
 
@@ -24,7 +29,8 @@ Below is the current project structure, designed for clarity, scalability, and e
 EYUXBETA
 ├── app
 │   └── (tabs)
-│       └── index.tsx             // NOW: A clean entry point that renders the main App component.
+|       ├── index.tsx             // NOW: A clean entry point that renders the main App component.
+│       └── storybook.tsx
 ├── src
 │   ├── api                       // For all external API call logic.
 │   │   ├── geminiService.ts
@@ -34,6 +40,13 @@ EYUXBETA
 │   │   ├── animated              // Purely aesthetic animated components.
 │   │   │   ├── AnimatedBackground.tsx
 │   │   │   └── StarryBackground.tsx
+|   |   |──  AgenticIDE.tsx        // Interactive Code Editor & Previewer
+|   |   |── DrawingCanvasModal.tsx // Sketching tool
+|   |   |── FlashcardGenerator.tsx // UI for generating cards
+|   |   |── FlashcardViewer.tsx   // Interactive Flip-card viewer
+|   |   |── MermaidViewer.tsx     // Diagram renderer
+|   |   |── SideImageViewer.tsx   // Desktop-specific split-view image viewer
+|   |   |── TrialBanner.tsx       // Trial system UI
 │   │   ├── chat                  // Components specific to the chat screen.
 │   │   │   ├── ActiveModeIndicator.tsx
 │   │   │   ├── AnimatedChatTitle.tsx
@@ -66,6 +79,7 @@ EYUXBETA
 │   │   ├── api.ts
 │   │   ├── app.ts
 │   │   ├── personalities.ts
+|   |   ├── flashcard.ts 
 │   │   └── storage.ts
 │   ├── contexts                  // For React Context providers.
 │   │   └── ToastContext.tsx
@@ -84,7 +98,10 @@ EYUXBETA
 │   ├── types                     // Centralized TypeScript types and interfaces.
 │   │   └── index.ts
 │   ├── utils                     // Helper functions.
-│   │   └── systemInstructions.ts
+│   │   ├── systemInstructions.ts
+|   |   ├── TrialBanner.tsx       // Trial system UI
+|   |   ├── webNotifications.ts   // Web-specific push notification handler
+|   |   ├──
 │   └── App.tsx                   // The main application component (formerly AppContent).
 ├── package.json
 └── ... (other root config files)
@@ -95,15 +112,119 @@ EYUXBETA
 
 
  <div style="overflow-x: auto; white-space: nowrap; text-align: center;">
-  <img src="https://raw.githubusercontent.com/Eul45/EyuX/main/assets/images/333.png"
+  <img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/333.png"
        alt="EyuX Architecture Diagram"
        style="height: auto; max-width: 100%;" />
 </div>
 
 
-
-
 ---
+
+🖼️ Feature Overview
+🖥️ Desktop & Web Experience
+EyuX on the web utilizes the full screen real estate for a powerful dashboard experience.
+<table>
+<tr>
+<td width="50%" align="center">
+<strong>Split-View Image Preview</strong>
+</td>
+<td width="50%" align="center">
+<strong>Multi-Thread Tree Visualization</strong>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/1.png" alt="Split View" width="100%">
+<br/>
+<em>Clicking an image opens it in a dedicated sidebar without blocking the chat history.</em>
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/2.png" alt="Tree View" width="100%">
+<br/>
+<em>Visualize complex conversation paths and navigate branches like a node graph.</em>
+</td>
+</tr>
+</table>
+🛠️ Developer & Study Tools
+<table>
+<tr>
+<td width="50%" align="center">
+<strong>Agentic IDE (Code Canvas)</strong>
+</td>
+<td width="50%" align="center">
+<strong>Interactive Flashcards</strong>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/3.png" alt="Code Canvas" width="100%">
+<br/>
+<em>Edit and Run HTML/CSS/JS code generated by the AI in a live sandbox.</em>
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/4.png" alt="Flashcards" width="100%">
+<br/>
+<em>Turn conversation topics into study decks with flip animations.</em>
+</td>
+</tr>
+</table>
+☁️ Sync & Sharing
+<table>
+<tr>
+<td width="50%" align="center">
+<strong>Conversation Sharing</strong>
+</td>
+<td width="50%" align="center">
+<strong>Google Drive Sync</strong>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/6.png" alt="Sharing Interface" width="100%">
+<br/>
+<em>Generate public links to share your conversations and diagrams with others.</em>
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/5.png" alt="Imagine" width="100%">
+<br/>
+<em>Generate different styles of images</em>
+</td>
+</tr>
+</table>
+📱 Mobile & Interactive UI
+Optimized for touch, haptics, and quick interactions on Android.
+<table>
+<tr>
+<td width="33%" align="center">
+<strong>Data Visualization</strong>
+</td>
+<td width="33%" align="center">
+<strong>Live Web Search</strong>
+</td>
+<td width="33%" align="center">
+<strong>Polls & Interaction</strong>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/mobile_charts.png" alt="Data Charts" width="100%">
+<br/><br/>
+<em>Native rendering of Bar, Line, and Pie charts for data analysis.</em>
+</td>
+<td valign="top">
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/mobile_search.png" alt="Web Search" width="100%">
+<br/><br/>
+<em>Real-time browsing with cited sources, summaries, and deep links.</em>
+</td>
+<td valign="top">
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/mobile_polls.png" alt="Interactive Polls" width="100%">
+<br/><br/>
+<em>Interactive widgets and polls for instant decision making.</em>
+</td>
+</tr>
+</table>
+27.7s
+Use Arrow Up and Arrow Down to select a turn, Enter to jump to it, and Escape to return to the chat.
 
 ## ✨ Features Showcase
 
@@ -119,9 +240,20 @@ EyuX is packed with features that create a truly interactive and intelligent cha
 - **🤖 Dynamic Personalities:** Instantly switch the AI's persona—from a helpful Assistant to a chaotic Storyteller, a witty Gen Z, or even an Unhinged AI.
 - **🌐 Live Web Search:** The AI automatically detects when it needs fresh information and uses the Tavily API to search the web for real-time events, news, and data.
 - **🎨 AI Image Generation:** Generate images directly in the chat by describing what you want to see using the `/imagine` command.
+- **🌿 Multi-Thread Branching:** Visualize your conversation as a tree! Branch off from any message to explore different outcomes without losing the original context.
+- **🕵️‍♂️ Agent Mode:** Capable of executing multi-step complex tasks (e.g., "Research X, summarize it in a table, and save it to a folder").
 - **💾 Intelligent Memory:** EyuX remembers key facts you share, creating a continuous, personalized conversation. You can also manage these memories manually.
 - **⏰ Effortless Reminders:** Set reminders using natural language (e.g., "remind me to check the oven in 10 minutes"), and EyuX will schedule a device notification.
 - **🔄 Multi-Model Support:** Switch between different Google Gemini models (e.g., Flash 2.0, Flash 2.5) right from the sidebar to balance speed and power.
+- **🔄 Google Drive Cloud Sync: (Web Beta) ** seamless backup and sync of your history across devices using your Google Drive.
+
+---
+## 🎓 Study & Developer Tools
+- **⚡ Interactive Flashcards:** Automatically generate study flashcards from any conversation and review them in a flip-card interface.
+- **📊 Data Visualization:** Renders interactive Line, Bar, and Pie charts directly from data provided by the AI.
+- **🧜‍♀️ Mermaid Diagrams:** Renders complex flowcharts, sequence diagrams, and mind maps from text descriptions using Mermaid.js syntax.
+- **💻 Agentic IDE:** An interactive coding canvas to edit, run, and preview HTML/CSS/JS code generated by the AI.
+- **📐 LaTeX Math Support:** Beautiful rendering of complex mathematical equations.
 
 ---
 
@@ -151,8 +283,10 @@ EyuX is packed with features that create a truly interactive and intelligent cha
 - **AI:** Google Generative AI (Gemini) & Tavily AI for Web Search
 - **State Management:** React Hooks (useState, useContext, useCallback)
 - **Animations:** React Native Reanimated
-- **Local Storage:** AsyncStorage
+- **Local Storage:** AsyncStorage (Local) & Google Drive API (Cloud)
+- **Graphics/Charts:** react-native-svg, react-native-chart-kit
 - **UI Components:** @expo/vector-icons, react-native-markdown-display, react-native-webview
+- **Math/Diagrams:** react-katex, react-native-webview (for Mermaid/HTML)
 
 ---
 
