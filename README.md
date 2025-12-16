@@ -125,7 +125,6 @@ EYUXBETA
 
 ### 🖥️ Desktop & Web Experience
 EyuX on the web utilizes the full screen real estate for a powerful dashboard experience.
-
 <table>
 <tr>
 <td width="50%" align="center">
@@ -148,6 +147,7 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 </td>
 </tr>
 </table>
+
 🛠️ Developer & Study Tools
 <table>
 <tr>
@@ -171,29 +171,25 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 </td>
 </tr>
 </table>
-🖼️ image & Sharing
+
+🧠 Mermaid Diagram Visualization
 <table>
 <tr>
-<td width="50%" align="center">
-<strong>Conversation Sharing</strong>
-</td>
-<td width="50%" align="center">
-<strong>Image generation</strong>
+<td width="100%" align="center">
+<strong>Mermaid Diagram Rendering</strong>
 </td>
 </tr>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/6.png" alt="Sharing Interface" width="100%">
+<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/9.png" alt="Mermaid Diagram" width="100%">
 <br/>
-<em>Generate public links to share your conversations and diagrams with others.</em>
-</td>
-<td>
-<img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/5.png" alt="Imagine" width="100%">
-<br/>
-<em>Generate different styles of images</em>
+<em>Generate and visualize flowcharts, sequence diagrams, and system architectures directly from Mermaid syntax.</em>
 </td>
 </tr>
 </table>
+
+🖼️ image & Sharing
+
 
 ### 📱 Mobile app & Interactive UI
 Optimized for touch, haptics, and quick interactions on Android.
