@@ -188,8 +188,7 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 </tr>
 </table>
 
-🖼️ image & Sharing
-
+---
 
 ### 📱 Mobile app & Interactive UI
 Optimized for touch, haptics, and quick interactions on Android.
@@ -224,8 +223,7 @@ Optimized for touch, haptics, and quick interactions on Android.
 </td>
 </tr>
 </table>
-27.7s
-Use Arrow Up and Arrow Down to select a turn, Enter to jump to it, and Escape to return to the chat.
+
 
 ## ✨ Features Showcase
 
