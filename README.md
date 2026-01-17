@@ -155,7 +155,7 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 <strong>Agentic IDE (Code Canvas)</strong>
 </td>
 <td width="50%" align="center">
-<strong>Interactive Flashcards</strong>
+<strong>Interactive Flashcards and more</strong>
 </td>
 </tr>
 <tr>
