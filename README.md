@@ -47,6 +47,7 @@ EYUXBETA
 |   |   |── MermaidViewer.tsx     // Diagram renderer
 |   |   |── SideImageViewer.tsx   // Desktop-specific split-view image viewer
 |   |   |── TrialBanner.tsx       // Trial system UI
+|   |   |── PythonCell.tsx        // Executes Python code
 │   │   ├── chat                  // Components specific to the chat screen.
 │   │   │   ├── ActiveModeIndicator.tsx
 │   │   │   ├── AnimatedChatTitle.tsx
@@ -186,6 +187,21 @@ EyuX on the web utilizes the full screen real estate for a powerful dashboard ex
 <em>Generate and visualize flowcharts, sequence diagrams, and system architectures directly from Mermaid syntax.</em>
 </td>
 </tr>
+<h3>🐍 Python Data Analysis (Client-Side)</h3>
+<table>
+  <tr>
+    <td width="100%" align="center">
+      <strong>In-Browser Python Engine</strong>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <!-- ⚠️ Make sure to upload your screenshot and update this filename -->
+      <img src="https://raw.githubusercontent.com/Eul45/EyuXBeta/main/assets/images/python_preview.png" alt="Python Data Analysis" width="100%">
+      <br/>
+      <em>Powered by Pyodide (WASM). Executes Python code, calculates math/stats with NumPy/Pandas, and renders Matplotlib charts directly in the chat interface without a backend.</em>
+    </td>
+  </tr>
 </table>
 
 ---
