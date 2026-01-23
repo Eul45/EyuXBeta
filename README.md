@@ -47,7 +47,7 @@ EYUXBETA
 |   |   |── MermaidViewer.tsx     // Diagram renderer
 |   |   |── SideImageViewer.tsx   // Desktop-specific split-view image viewer
 |   |   |── TrialBanner.tsx       // Trial system UI
-|   |   |── PythonCell.tsx        // Executes Python code
+|   |   |── PythonCell.tsx        // Executes Python codes
 │   │   ├── chat                  // Components specific to the chat screen.
 │   │   │   ├── ActiveModeIndicator.tsx
 │   │   │   ├── AnimatedChatTitle.tsx
@@ -304,71 +304,28 @@ EyuX is packed with features that create a truly interactive and intelligent cha
 
 ---
 
-## 🚀 Getting Started
 
-### 1. Prerequisites
+## 🤝 Project Status & Collaboration
 
-- Node.js (LTS version, v18 or newer recommended)
-- npm (comes with Node.js)
-- Expo Go app on your iOS or Android device for the quickest setup.
+This project is actively developed and used in production.  
+The core source code is **not open-source**, as it’s part of a live product and ongoing development.
 
-### 2. Clone the Repository
+### You can still contribute by:
+- Reporting bugs or issues
+- Suggesting new features or improvements
+- Giving UX, performance, or scalability feedback
+- Sharing ideas or use-cases
 
-```bash
-git clone https://github.com/Eul45/EyuXBeta.git
-cd EyuXBeta
-```
+### Collaboration
+For serious collaboration, partnership, or research opportunities, feel free to reach out directly:
 
-### 3. Install Dependencies
-
-```bash
-npm install
-```
-
-### 4. Set Up API Keys
-
-EyuX requires API keys to connect to AI services. You'll need to create a `.env` file to store them securely.
-
-- **Create the file:** In the root of the project, create a new file named `.env`.
-- **Get Your Keys:**
-  - **Google AI (Gemini):** Go to [Google AI Studio](https://aistudio.google.com/app/apikey) to get your free API key.
-  - **Tavily AI (Web Search):** Go to [Tavily.com](https://tavily.com/#api) to get your free API key for the web search feature.
-- **Add Keys to .env:**  
-  ```env
-  EXPO_PUBLIC_GEMINI_API_KEY="YOUR_GOOGLE_AI_API_KEY_HERE"
-  EXPO_PUBLIC_TAVILY_API_KEY="YOUR_TAVILY_API_KEY_HERE"
-  ```
-  > **Note:** The `EXPO_PUBLIC_` prefix is required by Expo to expose these variables to the app.
-
-### 5. Start the Development Server
-
-```bash
-npx expo start
-```
-
-This will start the Metro bundler. You can then scan the QR code with the Expo Go app on your phone or run the app in an emulator.
+📩 **Email:** eyutechservices@gmail.com  
+💬 **Telegram:** [@Eul_zzz](https://t.me/Eul_zzz)
 
 ---
 
+Thank you for your interest and support!
 
-## 🤝 How to Contribute
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-**Key Contribution Areas:**
-- **Refactoring:** Help break down large files into smaller, reusable components and screens as outlined in the target architecture.
-- **Bug Fixes:** Find and fix bugs to improve stability.
-- **New Features:** Propose and implement new, exciting features.
-- **Performance Optimization:** Help improve app startup time and responsiveness.
-
-**Steps:**
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
 
 
 ---
