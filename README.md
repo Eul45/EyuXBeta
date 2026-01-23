@@ -18,7 +18,7 @@
 </div>
 <br/>
 
-EyuX is more than just a chatbot. It's a versatile mobile companion designed to be your assistant, entertainer, and productivity partner. Powered by Google's Gemini models, it features dynamic AI personalities, live web search, AI image generation, interactive code execution, long-term memory, and extensive customization options, all wrapped in a sleek, animated, and user-friendly interface.
+EyuX is more than just a chatbot. It's a versatile mobile and web companion designed to be your assistant, entertainer, and productivity partner. Powered by Google's Gemini models, it features dynamic AI personalities, live web search, AI image generation, interactive code execution, long-term memory, and extensive customization options, all wrapped in a sleek, animated, and user-friendly interface.
 
 ---
 ## 🏗️ Project Structure & Architecture
